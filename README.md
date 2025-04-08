@@ -13,5 +13,5 @@ Ensure you have Git and Go installed on your system before proceeding.
 
 ### Step 1 Clone the Repository
 ```bash
-git clone httpsgithub.comyour-repoSM-TOOL.git
-cd SM-TOOL
+https://github.com/smrokon07/deep-reconnaissance-.git
+cd deep-reconnaissance-
