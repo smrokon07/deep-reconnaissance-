@@ -1,12 +1,17 @@
-# deep-reconnaissance-
+# SM-TOOL - Deep Reconnaissance Toolkit
 
-import os 
-import subprocess
-domain = input("Enter target domain(example.com):")
-print("[*]Running subfinder...")
-subprocess.run(f"subfinder -d {domain} -o subs.txt",shell=true)
-print("[*]Running httpx...")
-subprocess.run("httpx -l subs.txt -silent -o live.txt",shell=true)
-print("[*]Running ffuf on live domains..")
-subprocess.run("ffuf",shell=true)
+SM-TOOL is a powerful automation tool for reconnaissance, providing subdomain enumeration, vulnerability scanning, and takeover detection. This toolkit consists of two scripts
 
+1. `install_tools.sh` - Installs required dependencies.
+2. `deep_recon.sh` - Performs deep reconnaissance using installed tools.
+
+---
+
+## 🚀 Installation
+
+Ensure you have Git and Go installed on your system before proceeding.
+
+### Step 1 Clone the Repository
+```bash
+git clone httpsgithub.comyour-repoSM-TOOL.git
+cd SM-TOOL

@@ -1,0 +1,34 @@
+{
+  "tools": [
+    {
+      "name": "curl",
+      "description": "Command-line tool for transferring data with URLs.",
+      "install": "sudo apt-get install -y curl",
+      "usage": "curl -s -I http://example.com"
+    },
+    {
+      "name": "nslookup",
+      "description": "DNS query tool for resolving domain names.",
+      "install": "sudo apt-get install -y dnsutils",
+      "usage": "nslookup example.com"
+    },
+    {
+      "name": "subfinder",
+      "description": "Passive subdomain enumeration tool.",
+      "install": "GO111MODULE=on go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest && mv ~/go/bin/subfinder /usr/local/bin/",
+      "usage": "subfinder -d example.com"
+    },
+    {
+      "name": "nuclei",
+      "description": "Fast vulnerability scanner based on YAML templates.",
+      "install": "GO111MODULE=on go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest && mv ~/go/bin/nuclei /usr/local/bin/",
+      "usage": "nuclei -t cves -u http://example.com"
+    },
+    {
+      "name": "httpx",
+      "description": "Fast and multi-purpose HTTP toolkit for reconnaissance.",
+      "install": "GO111MODULE=on go install -v github.com/projectdiscovery/httpx/v2/cmd/httpx@latest && mv ~/go/bin/httpx /usr/local/bin/",
+      "usage": "cat subdomains.txt | httpx -silent"
+    }
+  ]
+}
